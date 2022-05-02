@@ -3,23 +3,24 @@ using namespace std;
 
 int main()
 {
-	int m,a,i=0;
+	int a,c=0;
 	cout<<"Enter the number :";
 	cin>>a;
 	
-	//m=a/2;
-	for(int i=2;i<a;i++)
+	for(int i=1;i<=a;i++)
 	{
 		if(a%i==0)
 		{
-			cout<<"The number is not prime";
-			break;
-		}
-		else{
-			cout<<"The number is prime";
-			break;
+			c++;
 		}
 			
-	}	
+	}
+		if(c==2)
+		{
+			cout<<"The number is prime";
+		}
+		else{
+			cout<<"The number is not prime";
+		}	
 	return 0;
 }

@@ -7,8 +7,8 @@ int main()
 	cout<<"Enter the number :";
 	cin>>a;
 	
-	//m=a/2;
-	for(int i=2;i<a;i++)
+	m=a/2;
+	for(int i=2;i<=m;i++)
 	{
 		if(a%i==0)
 		{
